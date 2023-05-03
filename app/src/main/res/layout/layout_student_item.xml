@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     app:strokeColor="@color/gray100"
     app:strokeWidth="1dp"
     app:cardCornerRadius="4dp"
@@ -20,8 +19,10 @@
         <TextView
             android:id="@+id/txt_First_Character"
             android:layout_width="55dp"
-            android:layout_height="55dp"
+            android:layout_height="0dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/shape_back_first_character"
             android:gravity="center"
             android:text="A"
@@ -48,6 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/shape_back_text"
             android:paddingStart="4dp"
             android:paddingTop="2dp"
@@ -56,6 +58,7 @@
             android:text="Android"
             android:textColor="@color/black"
             android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/txt_full_name"
             app:layout_constraintTop_toBottomOf="@+id/txt_full_name" />
 

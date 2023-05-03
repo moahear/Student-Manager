@@ -14,6 +14,10 @@ class StudentAdapter : RecyclerView.Adapter<StudentAdapter.StudentViewHolder>() 
         RecyclerView.ViewHolder(binding.root) {
         fun bindStudent(student: Student) {
             binding.apply {
+                txtCourseName.text=student.course
+                txtFirstCharacter.text= student.name.first().uppercaseChar().toString()
+                txtFullName.text=student.name
+                txtScore.text=student.score.toString()
                 root.setOnClickListener {
                     setOnStudentItemClickListener?.let {
                         it(student)
